@@ -7,20 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-<main>    
-    <Script src="Index.js"> </Script>
-    <section>
-        <p>Zadane ukoly</p> 
-        <p>00</p>
-        <p>Splnene ukoly</p>
-        <p>00</p>
-    </section>
-    <section>
-        
-    </section>
-    <section>
-        <p>Zadat ukol</p>
-        <button>+</button></main>
-    </section>
+    <main>    
+        <Script src="Index.js"> </Script>
+        <section class="horni">
+            <div id="zadane">
+                <h5 id="text_zadane">00</h5>
+                <p>Zadane ukoly</p> 
+            </div>
+            <div id="splnene">
+                <h5 id="text_splnene">00</h5>
+                <p>Splnene ukoly</p>
+             </div>
+        </section>
+        <section class="stredni">
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        <section class="dolni">
+             <div class="new-task">
+                <input id="task-to-add" type="text" placeholder="Nový úkol">
+                <div class="button">
+                    <span class="material-icons">+</span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

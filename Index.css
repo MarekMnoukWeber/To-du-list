@@ -2,10 +2,10 @@ body{
     background-color: blue;
     display: flex;
     margin: 10%;
+    
 }
 main{
-    width: 25%;
-    height: 50%;
+    width: 60%;
     background-color: white;
     margin: auto; 
     display: flex;
@@ -17,18 +17,26 @@ main{
     justify-content: space-around;
 }
 .splene{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .dolni{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 80%;
+    margin: auto;
+    height: 8%;
 }
 #zadane{
     display: flex;
+    flex-direction: column;
 }
 #splnene{
     display: flex;
+    flex-direction: column;
 }
 
 #text_zadane{
@@ -39,4 +47,45 @@ main{
     color: blue;
 }
 
+.new-task{
+    display: flex;
+}
 
+h5, .h5 {
+    font-size: 1.225rem;
+    font-weight: 600;
+}
+
+
+input {
+    border: none;
+    border-bottom: 2px solid #BCC3DB;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 4px solid #BCC3DB;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFBA08;
+    margin-left: auto;
+    justify-content: space-around;
+}
+
+.button span {
+    font-size: 2.3rem;
+    color: white;
+}
+
+.button:hover {
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
