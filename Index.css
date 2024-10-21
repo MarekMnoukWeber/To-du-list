@@ -1,0 +1,42 @@
+body{
+    background-color: blue;
+    display: flex;
+    margin: 10%;
+}
+main{
+    width: 25%;
+    height: 50%;
+    background-color: white;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.horni{
+    display: flex;
+    justify-content: space-around;
+}
+.splene{
+    display: flex;
+    flex-direction: column;
+}
+.dolni{
+    display: flex;
+    justify-content: space-around;
+}
+#zadane{
+    display: flex;
+}
+#splnene{
+    display: flex;
+}
+
+#text_zadane{
+    color: yellow;
+}
+
+#text_splnene{
+    color: blue;
+}
+
+
