@@ -6,10 +6,12 @@ body{
 }
 main{
     width: 60%;
+    height: 60%;
     background-color: white;
     margin: auto; 
     display: flex;
     flex-direction: column;
+    border-radius: 10%;
     
 }
 .horni{
@@ -88,4 +90,8 @@ input:focus {
     transition: 0.5s all;
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.vzor{
+    display: none;
 }
