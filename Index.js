@@ -12,7 +12,7 @@ function Vytvoř_ukol(Název) {
     novy_ukol.querySelector("p").innerHTML = Název 
     novy_ukol.classList.remove("vzor")
     new_task.querySelector(".zadane").onclick = e => {
-        e.target.classList.toggle("done")
+        e.target.classList.toggle("zadane")
     }
 
     stredni.append(novy_ukol)
