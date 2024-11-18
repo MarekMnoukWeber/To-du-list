@@ -95,3 +95,7 @@ input:focus {
 .vzor{
     display: none;
 }
+
+.hotovo{
+    color: red;
+}
