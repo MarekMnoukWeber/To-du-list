@@ -1,9 +1,9 @@
 const stredni = document.querySelector(".stredni")
 const zadane_ukoly = document.getElementById("zadane")
 const splnene_ukoly = document.getElementById("splnene")
+const Prikozave_tlacitko = document.querySelector(".button")
+const Prikazovy_radek = document.querySelector("#task-to-add")
 
-let Prikozave_tlacitko = document.querySelector(".button")
-let Prikazovy_radek = document.querySelector("#task-to-add")
 let zadane = 0
 let splnene = 0
 
@@ -23,14 +23,14 @@ function Vytvoř_ukol(Název) {
 
     novy_ukol.querySelector("p").innerHTML = Název 
     novy_ukol.classList.remove("vzor")
+    
     novy_ukol.querySelector("#Oznacit_za_splnene").onclick = e => splnit_ukol(e.target.parentElement)
     novy_ukol.querySelector("#Smazat").onclick = e => smazat_ukol(e.target.parentElement)
 
-    
     return novy_ukol
 }
 
-function add_task (jmeno) {
+function dalsi_ukol (jmeno) {
     let novy_ukol = Vytvoř_ukol(jmeno)
     stredni.append(novy_ukol)
     zadane_ukoly.innerHTML = ++zadane
@@ -41,7 +41,7 @@ Prikozave_tlacitko.onclick = e => {
         alert("Neťapká to")
 
     } else {
-        add_task(Prikazovy_radek.value)
+        dalsi_ukol(Prikazovy_radek.value)
 
     }
 }
